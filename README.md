@@ -1,78 +1,129 @@
-# 🚀 50 DAYS OF DATA ANALYST CHALLENGE: E-commerce Sales Analytics
+# 🚀 50 Days of Data Analyst Challenge – Sales Analytics
 
-This repository documents my **50-Day Data Analyst Challenge**, a project designed to simulate the complete end-to-end analytical workflow using the three core tools: **Excel, SQL, and Power BI**.
+This repository documents my **50 Days Data Analyst Challenge**, a hands-on project designed to simulate a **real-world, end-to-end data analytics workflow** using **Excel, SQL, and Power BI**.
 
-The project uses a real-world E-commerce Sales dataset (`train.csv`) to transform raw transaction data into actionable business intelligence, demonstrating proficiency in the full data analysis stack.
-
----
-
-## 🎯 Project Goals
-
-The primary objective is to answer the core business question: **"How can we optimize sales strategy and improve customer retention based on historical data?"**
-
-The project focuses on calculating and analyzing the following Key Performance Indicators (KPIs):
-* Total Revenue, Profitability, and Average Order Value (AOV).
-* Year-over-Year (YoY) Sales Growth and Month-over-Month (MoM) trends.
-* Shipping Efficiency and Customer Segmentation.
+The project focuses on transforming **raw sales transaction data** into **meaningful, actionable business insights** through structured analysis, data modeling, and visualization.
 
 ---
 
-## 🛠️ Tool Stack & Core Skills Demonstrated
+## 🧩 Problem Statement
 
-| Tool | Primary Focus | Key Skills Applied |
-| :--- | :--- | :--- |
-| **Microsoft Excel** | **Data Cleaning & Initial Prep** | `TRIM()`, `PROPER()`, **Text-to-Columns** (Date Conversion), **VLOOKUP**, **Nested IFs**, Pivot Tables. |
-| **SQL (T-SQL)** | **Data Modeling & Aggregation** | **Star Schema** creation (`SELECT DISTINCT`), Complex **JOINs**, **CTEs**, **Window Functions** (`RANK()`, Running Total), **HAVING** for group filtering. |
-| **Power BI** | **Visualization & Storytelling** | **Data Modeling** (Relationships), **Advanced DAX** (Time Intelligence, Ratios), **Power Query (M)** transformations, Interactive Dashboard Design. |
+Sales teams often lack a clear, data-driven understanding of performance across **regions, products, and customer segments**.  
+Without structured analysis, it becomes difficult to identify:
+
+- Profitability drivers  
+- Seasonal trends  
+- Operational inefficiencies  
+
+As a result, strategic decisions related to **pricing, inventory planning, regional focus, and customer targeting** are frequently made with limited visibility.
+
+This project aims to analyze **historical sales data** to uncover trends, evaluate performance, and support **informed, data-backed decision-making**.
+
+---
+
+## 🎯 Project Objective
+
+To demonstrate how a **data analyst approaches a business problem from start to finish** by:
+
+- Understanding the business context behind the data  
+- Cleaning and validating raw transactional data  
+- Structuring data for scalable analysis  
+- Deriving key business KPIs  
+- Building clear and interactive dashboards  
+- Communicating insights effectively  
+
+---
+
+## ❓ Key Business Questions
+
+- How do sales and profitability vary across regions and sales channels?  
+- Which products and customers contribute the most to total revenue?  
+- Are there seasonal or time-based trends impacting sales performance?  
+- How efficient is the order fulfillment and shipping process?  
+- Which areas show potential for performance optimization?  
+
+---
+
+## 📊 Key Metrics & KPIs (Derived)
+
+The following KPIs are derived from the available fact data:
+
+- **Total Sales**  
+- **Total Profit**  
+- **Profit Margin**  
+- **Average Order Value (AOV)**  
+- **Order Count**  
+- **Time-based Trends** (Monthly / Yearly)  
+
+---
+
+## 🛠️ Tools & Skills Demonstrated
+
+| Tool     | Focus Area                        | Key Skills |
+|----------|----------------------------------|------------|
+| Excel    | Data Understanding & Cleaning    | Data validation, date standardization, text cleaning, derived metrics, Pivot Tables |
+| SQL      | Data Modeling & Analysis          | Fact–dimension logic, joins, CTEs, window functions, KPI calculations |
+| Power BI | Visualization & Storytelling     | Data modeling, DAX measures, interactive dashboards |
 
 ---
 
 ## 📂 Repository Structure
 
-The project is organized to mirror a professional data pipeline:
+The repository is organized to reflect a **professional analytics workflow**:
 
-* `/data/train.csv`: Contains the original, unprocessed `train.csv` file.
-* `/data/clean`: Contains the cleaned CSV used for SQL import (`cleaned_data_day1.csv`).
-* `/sql/`: Contains all daily SQL scripts (including Fact/Dimension creation, KPI calculations, and the final optimized **VIEW** for Power BI).
-* `/power_bi/`: Contains the final **`.pbix`** Power BI data model file.
+```text
+data/
+├── raw/            → Original dataset
+├── cleaned/        → Cleaned and prepared data
+
+Day-01-*/           → Business understanding & dataset overview  
+Day-02-*/           → Fact vs Dimension identification  
+Day-03-*/           → Data type validation  
+
+sql/                → SQL scripts (added progressively)  
+power_bi/           → Power BI reports and dashboards 
+
+
+Each **Day folder** contains:
+
+- A short README explaining the task and learning  
+- Supporting screenshots or files from that day  
+```
+---
+
+## 📈 Data Modeling Approach
+
+The transactional sales data is progressively structured into a **fact-based analytical model** to ensure accurate aggregation and reporting.
+
+- **Fact Table**: Sales orders (quantity, sales value, cost)  
+- **Dimension Attributes**: Customer, Product, Region, Channel, Date  
+
+This approach supports **reliable filtering, KPI calculations, and scalable analysis** in Power BI.
 
 ---
 
-## 📉 Data Modeling Approach
+## 🔄 Project Progress
 
-The initial flat file was separated into a **Star Schema** to ensure proper filtering and accurate DAX calculations in Power BI. The structure involves three core tables linked via unique IDs:
-
-* **Fact Table:** `Fact_Orders` (contains Order ID, Sales, Quantity, and the Foreign Keys to dimensions).
-* **Dimension Tables:** `Dim_Customer`, `Dim_Product`, and a generated `Dim_Date` table.
-
-
+- ✅ **Day 01**: Business & Data Understanding  
+- ✅ **Day 02**: Fact vs Dimension Identification  
+- ✅ **Day 03**: Data Type Validation  
+- ⏳ **Upcoming**: Data Cleaning, SQL Analysis, Power BI Dashboarding  
 
 ---
 
-## 🔗 Follow the Journey & Final Deliverables
+## 🔗 Follow the Journey
 
-All 50 daily posts detailing the methodology, challenges, and insights are shared on LinkedIn. Check out the final deliverables below:
-
-| Deliverable | Description |
-| :--- | :--- | :--- |
-| **LinkedIn Progress** | Daily posts sharing code snippets and key insights. |
-| **Live Interactive Dashboard** | The final Power BI Report published to Power BI Service. |
-| **Final Data Model** | The complete Power BI `.pbix` file. |
+Daily progress, learnings, and screenshots are shared on LinkedIn as part of the  
+**#50DaysOfDataChallenge**
 
 ---
 
----
+## 👋 Connect With Me
 
-## Connect with Me
+Thank you for viewing this project. I’m actively building my profile in **Data Analytics & Business Intelligence**.
 
-Thank you for viewing the **50-Days Data Analyst Challenge** project! I am actively seeking roles in Data Analysis and Business Intelligence.
+- **LinkedIn**: https://www.linkedin.com/in/mohammad-ali-41bba6208  
+- **Email**: mohdali1996ehs@gmail.com  
 
-| Contact Detail | Link |
-| :--- | :--- |
-| **LinkedIn (Progress & Network)** | **[linkedin.com/in/mohammad-ali-41bba6208]** |
-| **Email** | **[mohdali1996ehs@gmail.com]** |
-
-Best regards,
-
-**[Mohammad Ali]**
-Aspiring Data Analyst
+**Mohammad Ali**  
+*Aspiring Data Analyst*
