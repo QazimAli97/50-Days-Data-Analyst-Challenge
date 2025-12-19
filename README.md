@@ -76,9 +76,7 @@ data/
 ├── raw/            → Original dataset
 ├── cleaned/        → Cleaned and prepared data
 
-Day-01-*/           → Business understanding & dataset overview  
-Day-02-*/           → Fact vs Dimension identification  
-Day-03-*/           → Data type validation  
+50days challenge/   → 50 days work
 
 sql/                → SQL scripts (added progressively)  
 power_bi/           → Power BI reports and dashboards 
@@ -102,14 +100,6 @@ This approach supports **reliable filtering, KPI calculations, and scalable anal
 
 ---
 
-## 🔄 Project Progress
-
-- ✅ **Day 01**: Business & Data Understanding  
-- ✅ **Day 02**: Fact vs Dimension Identification  
-- ✅ **Day 03**: Data Type Validation  
-- ⏳ **Upcoming**: Data Cleaning, SQL Analysis, Power BI Dashboarding  
-
----
 
 ## 🔗 Follow the Journey
 
