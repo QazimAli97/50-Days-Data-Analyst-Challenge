@@ -63,6 +63,3 @@ This analysis enables the business to:
 
 ---
 
-## Next Step
-
-Category-wise and Sub-category Performance Analysis to identify top and bottom contributors.
